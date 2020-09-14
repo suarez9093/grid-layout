@@ -23,7 +23,7 @@ Layout
   display: grid;
   grid-template-columns: 70px auto auto;
   grid-template-rows: auto auto;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
 }
 
 .nav-container {
@@ -127,5 +127,42 @@ Hero Section
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+
+/* 
+Band Section
+======================================================
+*/
+.band {
+  margin: 1em;
+}
+.band-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 1 / -1;
+}
+.band-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.band-img {
+  width: 18em;
+  height: 18em;
+  border-radius: 4px;
+}
+
+@media (min-width: 600px) {
+  .band-description {
+    max-width: 800px;
+  }
+  .band-img-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .band-img {
+    margin-left: 3em;
   }
 }
