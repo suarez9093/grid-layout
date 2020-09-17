@@ -45,6 +45,14 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+.tour-btn {
+  display: inline-block;
+  padding: 0.75em 1.35em;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
 /* 
 Layout
 ======================================================
@@ -201,11 +209,13 @@ Tour Section
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 3em;
 }
 
 /* Holds all the content in this section */
 .tour-content-container {
   width: 90%;
+  max-width: 900px;
   padding: 0 1em;
 }
 /* Holds the title and subtitle */
@@ -252,4 +262,38 @@ Tour Section
   background-color: black;
   border-radius: 50%;
   display: inline-block;
+}
+.tour-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+/* The entire card */
+.tour-card {
+  margin: 1em 0;
+  background-color: white;
+  color: black;
+}
+
+.tour-card-text {
+  padding: 1em;
+}
+
+.tour-card-subtitle {
+  color: grey;
+}
+.tour-card .btn {
+  background-color: black;
+}
+
+@media (min-width: 600px) {
+  .tour-cards {
+    flex-direction: row;
+  }
+  .tour-card {
+    margin-right: 0.75em;
+  }
+  .tour-card:last-child {
+    margin-right: 0;
+  }
 }
