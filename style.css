@@ -15,6 +15,44 @@ img {
   object-fit: cover;
 }
 
+.nav-container,
+.tour {
+  background-color: black;
+}
+
+.btn,
+.nav-link,
+.nav-link-home,
+.nav-container,
+.finder,
+.tour {
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tour-btn {
+  display: inline-block;
+  padding: 0.75em 1.35em;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
 /* 
 Layout
 ======================================================
@@ -27,7 +65,6 @@ Layout
 }
 
 .nav-container {
-  background-color: black;
   padding: 1em;
 }
 
@@ -37,9 +74,6 @@ Navigation
 */
 /* The UL */
 .nav-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   grid-column: 1 / 5;
   grid-row: 1 / 2;
 }
@@ -51,13 +85,11 @@ Navigation
 }
 .nav-link,
 .nav-link-home {
-  color: white;
   text-decoration: none;
   cursor: pointer;
 }
 .btn {
   cursor: pointer;
-  color: white;
   grid-column: 5 / 6;
   grid-row: 1 / 1;
   align-self: center;
@@ -77,7 +109,6 @@ Navigation
 
 .finder {
   display: none;
-  color: white;
   justify-self: flex-end;
   align-self: center;
 }
@@ -165,4 +196,125 @@ Band Section
   .band-img {
     margin-left: 3em;
   }
+}
+
+/* 
+Tour Section
+======================================================
+*/
+
+/* Entire section */
+.tour {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3em;
+}
+
+/* Holds all the content in this section */
+.tour-content-container {
+  width: 90%;
+  max-width: 900px;
+  padding: 0 1em;
+}
+/* Holds the title and subtitle */
+.tour-heading {
+  text-align: center;
+}
+
+.tour-subtitle {
+  color: #ffffff;
+  font-style: italic;
+}
+
+/* The ul for the tour dates */
+.tour-date-container {
+  border: 1px solid red;
+}
+
+/* The li */
+.tour-date {
+  padding: 0.75em 1em;
+  background-color: #ffffff;
+  color: grey;
+  border-bottom: 0.2px solid rgb(217, 217, 217);
+}
+
+/* The flex container for the November tour date li */
+.tour-date-flex {
+  display: flex;
+  justify-content: space-between;
+}
+/* the span in the li */
+.tour-date-sold-out {
+  background-color: red;
+  color: white;
+  padding: 0.1em 0.25em;
+  margin-left: 1em;
+}
+/* the span in the li */
+.tour-date-left {
+  height: 25px;
+  width: 25px;
+  color: white;
+  text-align: center;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
+.tour-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+/* The entire card */
+.tour-card {
+  width: 100%;
+  margin: 1em 0;
+  background-color: white;
+  color: black;
+}
+
+.tour-card-text {
+  padding: 1em;
+}
+.tour-card-img {
+  width: 100%;
+}
+.tour-card-subtitle {
+  color: grey;
+}
+.tour-card .btn {
+  background-color: black;
+}
+
+@media (min-width: 600px) {
+  .tour-cards {
+    flex-direction: row;
+  }
+  .tour-card {
+    margin-right: 0.75em;
+  }
+  .tour-card:last-child {
+    margin-right: 0;
+  }
+}
+
+/* 
+Contact 
+==============================================================
+*/
+.contact {
+  padding: 1em;
+}
+.contact-heading {
+  text-align: center;
+}
+.contact-subtitle {
+  color: grey;
+  font-style: italic;
+}
+.contact-info-description {
+  margin-left: 1em;
 }
