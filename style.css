@@ -270,6 +270,7 @@ Tour Section
 
 /* The entire card */
 .tour-card {
+  width: 100%;
   margin: 1em 0;
   background-color: white;
   color: black;
@@ -278,7 +279,9 @@ Tour Section
 .tour-card-text {
   padding: 1em;
 }
-
+.tour-card-img {
+  width: 100%;
+}
 .tour-card-subtitle {
   color: grey;
 }
