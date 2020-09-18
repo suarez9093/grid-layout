@@ -300,3 +300,21 @@ Tour Section
     margin-right: 0;
   }
 }
+
+/* 
+Contact 
+==============================================================
+*/
+.contact {
+  padding: 1em;
+}
+.contact-heading {
+  text-align: center;
+}
+.contact-subtitle {
+  color: grey;
+  font-style: italic;
+}
+.contact-info-description {
+  margin-left: 1em;
+}
